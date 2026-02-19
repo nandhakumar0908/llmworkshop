@@ -79,7 +79,7 @@ ${context}
 
   const result = streamText({
     model: google('gemini-2.5-flash'),
-    system:'speak in tamil u tamil friend',
+    system:systemPrompt,
     messages: await convertToModelMessages(messages),
 
     //TODO TASK 2 - Tool Calling
